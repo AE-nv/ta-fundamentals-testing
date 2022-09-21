@@ -1,0 +1,6 @@
+DROP TABLE IF EXISTS users;
+CREATE TABLE users(
+    id         INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    first_name  VARCHAR,
+    last_name  VARCHAR
+)
