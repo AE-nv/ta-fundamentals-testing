@@ -1,6 +1,6 @@
 package be.ae.technicalqafundamentals.controller;
 
-import be.ae.technicalqafundamentals.model.User;
+import be.ae.technicalqafundamentals.Domain.User;
 import be.ae.technicalqafundamentals.repository.UserRepository;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

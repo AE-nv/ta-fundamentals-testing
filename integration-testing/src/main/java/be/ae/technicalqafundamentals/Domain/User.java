@@ -1,4 +1,4 @@
-package be.ae.technicalqafundamentals.model;
+package be.ae.technicalqafundamentals.Domain;
 
 import javax.persistence.*;
 
