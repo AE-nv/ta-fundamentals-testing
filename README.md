@@ -2,7 +2,7 @@
 
 This repository contains the exercises for the Technical QA Fundamentals course.
 
-To get started you will need docket, maven and Java 17.
+To get started you will need docker, maven and Java 17.
 
 To run the application in the integration-testing module you need a docker PostgreSQL Database:
 
