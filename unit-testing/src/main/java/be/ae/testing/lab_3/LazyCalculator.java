@@ -21,14 +21,13 @@ public class LazyCalculator {
     }
 
     private int doCalculation(String operator, int a, int b) {
-        switch (operator) {
-            case "+":
-                return a + b;
-            case "*":
-                if (a == 0) return 0;
-                return b + this.doCalculation("*", a - 1, b);
-            default:
-                return 42;
-        }
+        return switch (operator) {
+            case "+" -> a + b;
+            case "*" -> {
+                if (a == 0) yield 0;
+                yield b + this.doCalculation("*", a - 1, b);
+            }
+            default -> 42;
+        };
     }
 }
