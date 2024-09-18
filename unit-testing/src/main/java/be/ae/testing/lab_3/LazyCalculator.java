@@ -23,7 +23,7 @@ public class LazyCalculator {
     private int doCalculation(String operator, int a, int b) {
         switch (operator) {
             case "+":
-                return (a + b) % 7;
+                return a + b;
             case "*":
                 if (a == 0) return 0;
                 return b + this.doCalculation("*", a - 1, b);
